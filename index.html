@@ -12,7 +12,7 @@
         <div class="div-4">EcoHarvest</div>
         <div class="div-5">
           <div class="div-6">En</div>
-          <img loading="lazy" src="./index_files/30d4a88f-c929-4963-962e-b7e06ff127c3" class="img">
+          <img loading="lazy" src="./ri_arrow-up-s-line.svg" class="img">
         </div>
         <div class="div-7"><div class="div-8">Contact Us</div></div>
       </div>
@@ -28,6 +28,7 @@
         </div>
         <div class="div-17">
           <img loading="lazy" src="./index_files/hero pic.png" class="img-2">
+          <div class="fade">
           <div class="div-18">
             Empowering Nigerian Farmers Transition into Large-scale Agriculture
             with ease.
@@ -37,18 +38,19 @@
             resources to help them scale up, and ensuring agricultural development
             and sustainability in Nigeria.
           </div>
+          </div>
           <div class="div-20"><div class="div-21">Apply for a Loan</div></div>
         </div>
       </div>
      <div class="partners"><h2>Our Partners</h2>
         <div class="img">
-          <img src="./index_files/image 15.png" alt="">
-          <img src="./index_files/image 12.png" alt="">
-          <img src="./index_files/image 17.png" alt="">
-          <img src="./index_files/image 18.png" alt="">
-          <img src="./index_files/image 9.png" alt="">
-          <img src="./index_files/Group 139.png" alt="">
-          <img src="./index_files/image 21.png" alt="">
+          <img class="logo" src="./index_files/image 15.png" alt="">
+          <img class="logo" src="./index_files/image 12.png" alt="">
+          <img class="logo" src="./index_files/image 17.png" alt="">
+          <img class="logo" src="./index_files/image 18.png" alt="">
+          <img class="logo" src="./index_files/image 9.png" alt="">
+          <img class="logo" src="./index_files/Group 139.png" alt="">
+          <img class="logo" src="./index_files/image 21.png" alt="">
         </div>
      </div>
      <div><style type="text/css">
@@ -60,7 +62,7 @@
       }
        
       </style>
-      <img src="../skins//image_about_us.png" id="image_about_us" />
+      <img src="./image about us.png" id="image_about_us" />
       </div>
     <div class="div-22">
       <div class="div-23">
@@ -505,6 +507,16 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      column-gap: 20px;
+      padding-bottom: 40px;
+    }
+    .logo {
+      height: 100px;
+      background-color: #fafafa;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 8px;
+      padding-left: 5px;
+      padding-right: 5px;
     }
     .div-7 {
       justify-content: center;
@@ -656,6 +668,10 @@
       margin: 30px 0 0 100px;
       font: 400 18px Aeonik, sans-serif;
     }
+    .fade {
+      background: linear-gradient(65deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 91%); 
+      border-radius: 5px;
+    }
     .div-20 {
       position: relative;
       justify-content: center;
@@ -669,6 +685,11 @@
       flex-direction: column;
       margin: 40px 0 -23px 100px;
       padding: 14px 20px;
+    }
+    h2 {
+      text-align: justify;
+      margin-left: 600px;
+      font: 700 30px Aeonik, sans-serif;
     }
     @media (max-width: 991px) {
       .div-20 {
