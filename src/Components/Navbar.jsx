@@ -1,8 +1,12 @@
+import {NavLink} from 'react-router-dom'
+import ham from '../assets/ham.svg'
+import closeIcon from "../assets/closeMenu.svg"
+import Button from './Buttton'
 
 const Navbar = () => {
   return (
     <div>
-      <div className="flex justify-between px-7 py-6 md:px-28 md:py-8 items-center">
+      <div className="flex justify-between px-7 py-6 md:px-16 lg:px-28 md:py-6 items-center">
         <h1 className="text-xl md:text-3xl text-[#1A7408] font-bold">
           EcoHarvest
         </h1>
@@ -13,12 +17,19 @@ const Navbar = () => {
           </select>
           </div>
           <div>
-          <button className="bg-[#e49115] outline-none text-white py-2 md:py-4 px-4 md:px-8 font-medium rounded text-lg">Contact Us</button>
+          <Button>Contact Us</Button>
           </div>
         </div>
       </div>
-      <nav className="bg-[#1A7408]">
-        
+      <nav className="bg-[#1A7408] py-2 md:py-5">
+        <div className='text-white hidden md:flex justify-center lg:gap-24 md:gap-16 text-lg font-normal'>
+        <div><NavLink>Home</NavLink></div>
+        <div><NavLink>About Us</NavLink></div>
+        <div><NavLink>Loans</NavLink> </div>
+        <div><NavLink>Resources</NavLink></div>
+        <div><NavLink>Community</NavLink></div>
+        </div>
+        <div className='flex md:hidden justify-center '><img src={ham} className='w-11 bg-white rounded-xl' alt="ham Icon"/></div>
       </nav>
     </div>
   )
