@@ -7,9 +7,7 @@ function App() {
     <>
       <Navbar/>
       <Homepage/>
-      <Routes>
-        <Route/>
-      </Routes>
+      
     </>
   )
 }
