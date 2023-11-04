@@ -3,10 +3,10 @@ import Button from '../../Components/Buttton'
 
 const Landing = () => {
   return (
-    <div className="w-full h-[100vh] lg:h-[100%] bg-no-repeat lg:bg-cover text-white px-7 py-6 md:px-16 lg:px-28 md:py-6 lg:py-14 " style={{ backgroundImage: "url(" + landingBg + ")" }}>
+    <div className="w-full h-[100%] bg-no-repeat lg:bg-cover text-white px-7 py-6 md:px-16 lg:px-28 md:py-6 lg:py-14 " style={{ backgroundImage: "url(" + landingBg + ")" }}>
       <div className='lg:w-2/3'>
       <h1 className='text-3xl md:text-5xl lg:text-6xl font-bold'>
-      Empowering Nigerian Farmers to <span>transition</span> into Large-scale Agriculture <span>with ease</span>
+      Empowering Nigerian Farmers to <span className='bg-[#e49115] bg-clip-text text-transparent'>transition</span> into Large-scale Agriculture <span className='bg-[#e49115] bg-clip-text text-transparent'>with ease</span>
       </h1>
       
       <p className='my-11 md:text-2xl'>
