@@ -3,15 +3,29 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: Aeonik;
+    font-family: AeonikMed;
     src: url(Aeonik/Aeonik-Medium.otf);
   }
+
+@font-face {
+    font-family: Aeoniklight;
+    src: url(Aeonik/Aeonik-Light.otf);
+  }
+
+@font-face {
+    font-family: AeonikBold;
+    src: url(Aeonik/Aeonik-Bold.otf);
+  }
+@font-face {
+    font-family: AeonikReg;
+    src: url(Aeonik/Aeonik-Regular.otf);
+  } 
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Aeonik;
+    font-family: AeonikMed;
 }
 
 .marquee{
@@ -21,10 +35,25 @@
 .marquee span{
   width: 50%;
   float: left;
-  
 }
 
 @keyframes marquee {
-  0% { left: 0; }
-  100% { left: -100%; }
+  0% { 
+    left: 0;
+  }
+  100% { 
+    left: -100%;
+   }
+}
+
+
+.trans{
+  transition: top 0.3s;
+}
+
+.timer p{
+  font-family: AeonikLight;
+}
+.timer .time {
+  width: 100px;
 }

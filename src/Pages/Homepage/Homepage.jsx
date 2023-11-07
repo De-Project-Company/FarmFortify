@@ -1,5 +1,6 @@
 import Landing from "./Landing"
 import Partner from "./Partner"
+import Reviews from "./Reviews"
 import Wecan from "./Wecan"
 
 const Homepage = () => {
@@ -8,6 +9,7 @@ const Homepage = () => {
       <Landing/>
       <Partner/>
       <Wecan/>
+      <Reviews/>
     </div>
   )
 }

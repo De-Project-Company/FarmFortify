@@ -39,21 +39,20 @@ const Partner = () => {
           </div>
         </div>
       </div>
-      <div className="flex">
-        <div>
+      <div className="flex flex-wrap md:flex-nowrap mt-20 ">
+        <div className="md:w-1/2">
           <img src={carrotImg} alt="carrot image" />
         </div>
-        
-        <div className="flex flex-col justify-center items-center">
-            <p className="text-center font-thin w-1/2">
+        <div className="flex flex-col items-center md:w-1/2">
+            <p className="text-center font-thin font-[AeonikReg] lg:text-2xl px-10 py-10 lg:pt-36">
               We are here to help foster your growth in agro-business and
               improve the livelihood of farmers in Nigeria
             </p>
-
               <Button>Learn More &gt; </Button>
-            
           </div>
-
+      </div>
+      <div>
+        
       </div>
     </div>
   );
