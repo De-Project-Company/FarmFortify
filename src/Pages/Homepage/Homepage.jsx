@@ -8,6 +8,7 @@ const Homepage = () => {
       <Landing/>
       <Partner/>
       <Wecan/>
+      <BookaStand/>
     </div>
   )
 }
