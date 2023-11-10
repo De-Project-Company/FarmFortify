@@ -34,13 +34,13 @@ const Partner = () => {
               <img src={sterling} alt="sterling" className="w-20" />
             </span>
             <span>
-              <img src={hervest} alt="hervest" className="w-20" />
+              <img src={hervest} alt="hervest" className="hervest w-20" />
             </span>
           </div>
         </div>
       </div>
       <div className="flex flex-wrap md:flex-nowrap mt-20 ">
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 relative carrotImage">
           <img src={carrotImg} alt="carrot image" />
         </div>
         <div className="flex flex-col items-center md:w-1/2">
@@ -59,3 +59,5 @@ const Partner = () => {
 };
 
 export default Partner;
+
+

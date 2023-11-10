@@ -48,7 +48,7 @@ const Navbar = () => {
         </div>
       </div>
       <nav className="trans bg-[#1A7408] py-2 md:py-5 fixed w-full overflow-hidden z-30" id='trans'>
-        <div className='text-white hidden md:flex justify-center lg:gap-24 md:gap-16 text-lg font-[Aeoniklight]'>
+        <div className='text-white hidden md:flex justify-center lg:gap-24 md:gap-16 text-lg font-[AeonikReg] font-thin'>
         <div><NavLink>Home</NavLink></div>
         <div><NavLink>About Us</NavLink></div>
         <div><NavLink>Loans</NavLink> </div>

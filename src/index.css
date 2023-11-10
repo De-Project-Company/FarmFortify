@@ -31,6 +31,10 @@
 .marquee{
   animation: marquee 13s linear infinite ;
 }
+.marquee:hover{
+  animation-play-state: paused;
+}
+
 
 .marquee span{
   width: 50%;
@@ -46,7 +50,6 @@
    }
 }
 
-
 .trans{
   transition: top 0.3s;
 }
@@ -56,4 +59,24 @@
 }
 .timer .time {
   width: 100px;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: linear-gradient(105deg, rgba(15, 15, 15, 0.62) 42.5%, rgba(0, 0, 0, 0.00) 118.15%);
+  background-size: contain;
+}
+
+.carrotImage::before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: linear-gradient(317deg, rgba(35, 35, 35, 0.39) 25.12%, rgba(35, 35, 35, 0.00) 113.1%);
 }
