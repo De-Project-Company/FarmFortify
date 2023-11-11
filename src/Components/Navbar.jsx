@@ -6,7 +6,7 @@ import About from "../Pages/aboutUs/About";
 
 const Navbar = () => {
   return (
-    <div>
+    <div className="">
       <div className="flex justify-between px-7 py-6 md:px-16 lg:px-28 md:py-6 items-center">
         <h1 className="text-xl md:text-3xl text-[#1A7408] font-bold">
           EcoHarvest
@@ -29,7 +29,7 @@ const Navbar = () => {
               <NavLink to="/">Home</NavLink>
             </div>
             <div>
-              <NavLink to="/About">About Us</NavLink>
+              <NavLink to ="/About">About Us</NavLink>
             </div>
             <div>
               <NavLink>Loans</NavLink>{" "}

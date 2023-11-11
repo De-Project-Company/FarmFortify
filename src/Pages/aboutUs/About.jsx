@@ -1,7 +1,15 @@
+import Landing from "./Landing";
+import Mission from "./Mission";
+import StandFor from "./StandFor";
+
 const About = () => {
   return (
-    <div>About</div>
-  )
-}
+   <>
+     <Landing/>
+     <Mission/>
+     <StandFor/>
+   </>
+  );
+};
 
-export default About
+export default About;
