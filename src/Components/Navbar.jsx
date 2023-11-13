@@ -23,7 +23,7 @@ const Navbar = () => {
       }
 
     window.addEventListener('scroll',getScroll)
-    console.log(elementscrollValue)
+    
 
     return () => window.removeEventListener('scroll',getScroll)
     

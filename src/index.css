@@ -57,9 +57,7 @@
 .timer p{
   font-family: AeonikLight;
 }
-.timer .time {
-  width: 100px;
-}
+
 .hero::before {
   content: "";
   position: absolute;
@@ -80,3 +78,4 @@
   left: 0px;
   background: linear-gradient(317deg, rgba(35, 35, 35, 0.39) 25.12%, rgba(35, 35, 35, 0.00) 113.1%);
 }
+
