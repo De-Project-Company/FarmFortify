@@ -65,17 +65,17 @@ const Reviews = () => {
           </div>
           <p className="text-5xl text-[#1A7408]">:</p>
           <div className="flex flex-col items-center bg-[#1A7408] text-white w-20 md:w-28 py-3 rounded-md time">
-            <h4 className=" font-bold md:text-4xl">{countDown[1]}</h4>
+            <h4 className=" font-bold md:text-4xl">{String(countDown[1]).padStart(2,"0")}</h4>
             <p className="text-lg">Hours</p>
           </div>
           <p className="text-[#1A7408] text-5xl">:</p>
           <div className="flex flex-col items-center bg-[#1A7408] text-white px-6 py-3 rounded-md time w-20 md:w-28">
-            <h4 className="md:text-4xl font-bold">{countDown[2]}</h4>
+            <h4 className="md:text-4xl font-bold">{String(countDown[2]).padStart(2,"0")}</h4>
             <p className="text-lg">Minutes</p>
           </div>
           <p className="text-[#1A7408] text-5xl">:</p>
           <div className="flex flex-col items-center bg-[#1A7408] text-white py-3 w-20 md:w-28 rounded-md time">
-            <h4 className="md:text-4xl font-bold">{countDown[3]}</h4>
+            <h4 className="md:text-4xl font-bold">{String(countDown[3]).padStart(2,"0")}</h4>
             <p className="text-lg">Seconds</p>
           </div>
         </div>
