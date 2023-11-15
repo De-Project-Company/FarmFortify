@@ -1,13 +1,11 @@
+import wecanImg from "../../assets/wecan.png"
 const Wecan = () => {
   return (
-    <section>
-      <div>
-        
-      </div>
-      <div>
-
-      </div>
+    <div>
+      <section className="wecan ">
+      
     </section>
+    </div>
   )
 }
 

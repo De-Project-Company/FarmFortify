@@ -1,6 +1,7 @@
 import Navbar from "./Components/Navbar"
 import {Routes,Route} from 'react-router-dom'
 import Homepage from "./Pages/Homepage/Homepage"
+import Footer from "./Components/Footer"
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <Routes>
         <Route index element={<Homepage/>}/>
       </Routes>
-      
+      <Footer/>
     </>
   )
 }

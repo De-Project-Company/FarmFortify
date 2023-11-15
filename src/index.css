@@ -27,6 +27,14 @@
     box-sizing: border-box;
     font-family: AeonikMed;
 }
+div a{
+  font-family: AeonikLight;
+}
+nav div a:hover{
+  padding-bottom: 5px;
+  border-bottom: 3px solid white;
+}
+
 
 .marquee{
   animation: marquee 13s linear infinite ;
@@ -77,5 +85,14 @@
   bottom: 0px;
   left: 0px;
   background: linear-gradient(317deg, rgba(35, 35, 35, 0.39) 25.12%, rgba(35, 35, 35, 0.00) 113.1%);
+}
+
+.wecan{
+  height: 700px;
+  width: 100%;
+  padding-top: 20px;
+  background: linear-gradient(180deg, #E49115 -27.02%, rgba(228, 145, 21, 0.00) 117.64%)   , url("./assets/wecan.png") 0 400px;
+  background-repeat: no-repeat;
+  
 }
 

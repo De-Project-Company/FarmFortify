@@ -56,28 +56,83 @@ const Navbar = () => {
       >
         <div className="text-white hidden md:flex justify-center lg:gap-24 md:gap-16 text-lg font-[AeonikReg] font-thin">
           <div>
-            <NavLink>Home</NavLink>
+            <NavLink
+            to="/"
+            style={({isActive}) => {
+              return{
+                paddingBottom: isActive ?  "5px" : " ",
+                borderBottom: isActive ? "3px solid white" : " "
+              }
+            } }
+            >Home</NavLink>
           </div>
           <div>
-            <NavLink>About Us</NavLink>
+            <NavLink
+            to="/aboutUs"
+            style={({isActive}) => {
+              return{
+                paddingBottom: isActive ? "5px" : " ",
+                borderBottom: isActive ?  "3px solid white" : " "
+              }
+            } }
+            >About Us</NavLink>
           </div>
           <div>
-            <NavLink>Loans</NavLink>{" "}
+            <NavLink
+            to="/loans"
+            style={({isActive}) => {
+              return{
+                paddingBottom: isActive ? "5px" : " ",
+                borderBottom: isActive ?  "3px solid white" : " "
+              }
+            } }
+            >Loans</NavLink>{" "}
           </div>
           <div>
-            <NavLink>Resources</NavLink>
+            <NavLink
+            to="/resources"
+            style={({isActive}) => {
+              return{
+                paddingBottom: isActive ? "5px" : " ",
+                borderBottom: isActive ?  "3px solid white" : " "
+              }
+            } }
+            >Resources</NavLink>
           </div>
           <div>
-            <NavLink>Community</NavLink>
+            <NavLink
+            to="/community"
+            style={({isActive}) => {
+              return{
+                paddingBottom: isActive ? "5px" : " ",
+                borderBottom: isActive ?  "3px solid white" : " "
+              }
+            } }
+            >Community</NavLink>
           </div>
         </div>
         <div className="flex md:hidden justify-center ">
           <img src={ham} className="w-11 bg-white rounded-xl" alt="ham Icon" />
         </div>
       </nav>
-      <Modal modalAppearance={modalAppear} handleModalAppearance={handleModalAppearance} />
+      <Modal modalAppearance={modalAppear} handleModalAppearance={handleModalAppearance}>
+        <Contact handleModalAppearance={handleModalAppearance}/>
+      </Modal>
     </div>
   );
 };
 
 export default Navbar;
+
+const Contact = ({handleModalAppearance})=> {
+  return(<>
+  <div className="py-4 px-3">
+          <div className="flex items-center justify-between">
+          <h4>Contact Us</h4>
+          <div>
+            <img src={closeIcon} alt="" className="w-8 cursor-pointer" onClick={handleModalAppearance} />
+          </div>
+          </div>
+        </div>
+  </>)
+}
