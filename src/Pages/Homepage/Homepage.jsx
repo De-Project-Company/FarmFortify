@@ -2,7 +2,8 @@ import Landing from "./Landing"
 import Partner from "./Partner"
 import Reviews from "./Reviews"
 import Wecan from "./Wecan"
-import Modal from "../../Components/Modal"
+import Eligible from "./Eligible"
+import Resources from "./Resources"
 
 const Homepage = () => {
   return (
@@ -11,6 +12,8 @@ const Homepage = () => {
       <Partner/>
       <Wecan/>
       <Reviews/>
+      <Resources/>
+      <Eligible/>
     </div>
   )
 }

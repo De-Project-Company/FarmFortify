@@ -39,6 +39,7 @@ nav div a:hover{
 .marquee{
   animation: marquee 13s linear infinite ;
 }
+
 .marquee:hover{
   animation-play-state: paused;
 }
@@ -88,11 +89,25 @@ nav div a:hover{
 }
 
 .wecan{
-  height: 700px;
-  width: 100%;
-  padding-top: 20px;
-  background: linear-gradient(180deg, #E49115 -27.02%, rgba(228, 145, 21, 0.00) 117.64%)   , url("./assets/wecan.png") 0 400px;
+  height: 100%;
+  background: linear-gradient(180deg, #E49115 -27.02%, #e4911500 117.64%) 0 -50px  , url("./assets/wecan.png") 0 200px ;
   background-repeat: no-repeat;
   
 }
 
+.weCanCards{
+  filter: drop-shadow(0px 4px 60px rgba(131, 81, 8, 0.25))
+}
+
+@media(min-width: 1024px){
+  .wecan{
+    height: 100%;
+    background: linear-gradient(180deg, #E49115 -27.02%, #e4911500 117.64%) 0 -350px  , url("./assets/wecan.png") 0 600px;
+    background-repeat: no-repeat;
+    
+  }
+  .marquee2{
+    animation: marquee 20s linear infinite ;
+  }
+
+}

@@ -82,9 +82,14 @@ const Reviews = () => {
       </div>
       <div className="py-14">
         <h1 className="text-center mb-12 text-2xl font-bold">Our Reviews</h1>
-        <div className="flex overflow-x-auto flex-nowrap gap-8 items-center">
+        <div className="flex flex-wrap overflow-x-auto md:flex-nowrap gap-8 items-center">
           {comment}
         </div>
+        {/* <div className=" overflow-hidden relative h-[300px] w-[100%]">
+          <div className="flex items-center w-[200%] absolute overflow-hidden marquee2 h-auto gap-20">
+            {comment}
+          </div>
+        </div> */}
       </div>
     </div>
   );
@@ -95,9 +100,9 @@ export default Reviews;
 export const Commendables = ({ name, comment, occupation, image }) => {
   return (
     <div>
-      <div className="flex flex-col items-center w-[700px]">
+      <div className="flex flex-col items-center w-full max-w-[700px]">
         <p className="text-center text-lg font-medium">&apos;{comment}&apos;</p>
-        <div className="flex items-center">
+        <div className="flex items-center gap-3 mt-4">
           <div>
             <img src={image} alt={occupation} />
           </div>
