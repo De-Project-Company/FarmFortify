@@ -17,3 +17,18 @@ Button.propTypes = {
     children : PropTypes.string,
     onClick: PropTypes.func
 }
+
+const GreenButton = ({children, onClick}) => {
+  return (
+    <button className='bg-[#1A7408] outline-none text-white py-2 px-4 font-medium rounded text-sm' onClick={onClick}>
+      {children}
+    </button>
+  )
+}
+
+export {GreenButton}
+
+GreenButton.propTypes = {
+  children : PropTypes.string,
+  onClick: PropTypes.func
+}

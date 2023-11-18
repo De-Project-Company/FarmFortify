@@ -80,7 +80,7 @@ const Reviews = () => {
           </div>
         </div>
       </div>
-      <div className="py-14">
+      <div className="py-14 px-5">
         <h1 className="text-center mb-12 text-2xl font-bold">Our Reviews</h1>
         <div className="flex flex-wrap overflow-x-auto md:flex-nowrap gap-8 items-center">
           {comment}

@@ -10,6 +10,24 @@ const Navbar = () => {
   const [elementscrollValue, setElementScrollValue] = useState(0);
 
   const [modalAppear, setModalApp] = useState(false);
+  const [navAppear, setNavAppear] = useState(false)
+
+  const [userWidth, setUserWidth] = useState(null)
+
+  useEffect(()=>{
+    setUserWidth(window.innerWidth)
+    if(userWidth < 1024){
+      setNavAppear(false)
+    }else{
+      return
+    }
+  },[userWidth])
+
+  function handleNavAppear(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    setNavAppear(!navAppear);
+  }
 
   function handleModalAppearance(e) {
     e.preventDefault();
@@ -34,7 +52,7 @@ const Navbar = () => {
   }, [bodyScrollValue, elementscrollValue]);
 
   return (
-    <div>
+    <div className="relative">
       <div className="flex justify-between px-7 py-6 md:px-16 lg:px-28 md:py-6 items-center">
         <h1 className="text-xl md:text-3xl text-[#1A7408] font-bold">
           FarmFortify
@@ -54,7 +72,7 @@ const Navbar = () => {
         className="trans bg-[#1A7408] py-2 md:py-5 fixed w-full overflow-hidden z-30"
         id="trans"
       >
-        <div className="text-white hidden md:flex justify-center lg:gap-24 md:gap-16 text-lg font-[AeonikReg] font-thin">
+        <div className={navAppear ? "relative top-[-15px] bg-[#D3F5C6] z-50 h-full py-8 px-5 flex flex-col items-center gap-5" : "text-white hidden md:flex justify-center lg:gap-24 md:gap-16 text-lg font-[AeonikReg] font-thin"}>
           <div>
             <NavLink
             to="/"
@@ -112,7 +130,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="flex md:hidden justify-center ">
-          <img src={ham} className="w-11 bg-white rounded-xl" alt="ham Icon" />
+          <img src={ham} className="w-11 bg-white rounded-xl" alt="ham Icon" onClick={handleNavAppear} />
         </div>
       </nav>
       <Modal modalAppearance={modalAppear} handleModalAppearance={handleModalAppearance}>
