@@ -7,7 +7,7 @@ import Resources from "./Resources"
 
 const Homepage = () => {
   return (
-    <div>
+    <>
       <Landing/>
       <Partner/>
       <Wecan/>
@@ -15,6 +15,9 @@ const Homepage = () => {
       <Resources/>
       <Eligible/>
     </div>
+
+    </>
+
   )
 }
 

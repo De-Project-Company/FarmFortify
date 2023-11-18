@@ -1,9 +1,12 @@
-import { NavLink } from "react-router-dom";
+
+import { Link,NavLink } from "react-router-dom";
 import ham from "../assets/ham.svg";
 import closeIcon from "../assets/closeMenu.svg";
 import Button from "./Buttton";
 import { useEffect, useState } from "react";
+import About from "../Pages/aboutUs/About";
 import Modal from "./Modal";
+
 
 const Navbar = () => {
   const [bodyScrollValue, setBodyScrollValue] = useState(0);
@@ -52,7 +55,9 @@ const Navbar = () => {
   }, [bodyScrollValue, elementscrollValue]);
 
   return (
+
     <div className="relative">
+
       <div className="flex justify-between px-7 py-6 md:px-16 lg:px-28 md:py-6 items-center">
         <h1 className="text-xl md:text-3xl text-[#1A7408] font-bold">
           FarmFortify
@@ -64,6 +69,7 @@ const Navbar = () => {
             </select>
           </div>
           <div>
+
             <Button onClick={handleModalAppearance} setState={setModalApp}>Contact Us</Button>
           </div>
         </div>
@@ -86,7 +92,7 @@ const Navbar = () => {
           </div>
           <div>
             <NavLink
-            to="/aboutUs"
+            to="/About"
             style={({isActive}) => {
               return{
                 paddingBottom: isActive ? "5px" : " ",
@@ -136,11 +142,13 @@ const Navbar = () => {
       <Modal modalAppearance={modalAppear} handleModalAppearance={handleModalAppearance}>
         <Contact handleModalAppearance={handleModalAppearance}/>
       </Modal>
+
     </div>
   );
 };
 
 export default Navbar;
+
 
 const Contact = ({handleModalAppearance})=> {
   return(<>
@@ -154,3 +162,4 @@ const Contact = ({handleModalAppearance})=> {
         </div>
   </>)
 }
+
