@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "farmfortify",
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

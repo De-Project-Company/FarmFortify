@@ -1,10 +1,9 @@
-
-import { Link,NavLink } from "react-router-dom";
+import PropTypes from 'prop-types'
+import { NavLink } from "react-router-dom";
 import ham from "../assets/ham.svg";
 import closeIcon from "../assets/closeMenu.svg";
 import Button from "./Buttton";
 import { useEffect, useState } from "react";
-import About from "../Pages/aboutUs/About";
 import Modal from "./Modal";
 
 
@@ -19,7 +18,7 @@ const Navbar = () => {
 
   useEffect(()=>{
     setUserWidth(window.innerWidth)
-    if(userWidth < 1024){
+    if(userWidth > 765){
       setNavAppear(false)
     }else{
       return
@@ -30,6 +29,13 @@ const Navbar = () => {
     e.preventDefault();
     e.stopPropagation();
     setNavAppear(!navAppear);
+  }
+  function handleMobileNavDisAppear() {
+    if(userWidth < 768 && navAppear){
+      setNavAppear(false)
+    }else{
+      return
+    }
   }
 
   function handleModalAppearance(e) {
@@ -88,6 +94,7 @@ const Navbar = () => {
                 borderBottom: isActive ? "3px solid white" : " "
               }
             } }
+            onClick={handleMobileNavDisAppear}
             >Home</NavLink>
           </div>
           <div>
@@ -99,6 +106,7 @@ const Navbar = () => {
                 borderBottom: isActive ?  "3px solid white" : " "
               }
             } }
+            onClick={handleMobileNavDisAppear}
             >About Us</NavLink>
           </div>
           <div>
@@ -110,6 +118,7 @@ const Navbar = () => {
                 borderBottom: isActive ?  "3px solid white" : " "
               }
             } }
+            onClick={handleMobileNavDisAppear}
             >Loans</NavLink>{" "}
           </div>
           <div>
@@ -121,6 +130,7 @@ const Navbar = () => {
                 borderBottom: isActive ?  "3px solid white" : " "
               }
             } }
+            onClick={handleMobileNavDisAppear}
             >Resources</NavLink>
           </div>
           <div>
@@ -132,6 +142,7 @@ const Navbar = () => {
                 borderBottom: isActive ?  "3px solid white" : " "
               }
             } }
+            onClick={handleMobileNavDisAppear}
             >Community</NavLink>
           </div>
         </div>
@@ -162,4 +173,11 @@ const Contact = ({handleModalAppearance})=> {
         </div>
   </>)
 }
+
+
+
+Contact.propTypes = {
+  handleModalAppearance: PropTypes.func
+}
+
 
