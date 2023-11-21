@@ -9,7 +9,7 @@
     },
     {
       "source": "/about",
-      "destination" : "firebase.web.app/about",
+      "destination" : "/about",
       "type" : "301"
     }
   ],
