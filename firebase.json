@@ -2,11 +2,7 @@
   "hosting": {
     "site": "farmfortify",
     "public": "dist",
-    "redirects" : [{
-      "source": "/",
-      "destination" : "/",
-      "type" : "301"
-    },
+    "redirects" : [
     {
       "source": "/about",
       "destination" : "/about",
