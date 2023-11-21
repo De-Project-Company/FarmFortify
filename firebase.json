@@ -2,6 +2,17 @@
   "hosting": {
     "site": "farmfortify",
     "public": "dist",
+    "redirects" : [{
+      "source": "/",
+      "destination" : "/",
+      "type" : "301"
+    },
+    {
+      "source": "/about",
+      "destination" : "/about",
+      "type" : "301"
+    }
+  ],
     "ignore": [
       "firebase.json",
       "**/.*",
