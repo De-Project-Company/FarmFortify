@@ -3,12 +3,12 @@
     "site": "farmfortify",
     "public": "dist",
     "redirects" : [{
-      "source": "/",
+      "source": "*/",
       "destination" : "/",
       "type" : "301"
     },
     {
-      "source": "/About",
+      "source": "*/About",
       "destination" : "/about",
       "type" : "301"
     }
