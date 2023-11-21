@@ -2,7 +2,7 @@
   "hosting": {
     "site": "farmfortify",
     "public": "dist",
-    "redirects" : [
+    "rewrites" : [
       {
         "source": "**",
         "destination": "/index.html"
