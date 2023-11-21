@@ -1,3 +1,4 @@
+import Transition from "../../Transition";
 import Landing from "./Landing";
 import Metrics from "./Metrics";
 import Mission from "./Mission";
@@ -16,4 +17,6 @@ const About = () => {
   );
 };
 
-export default About;
+const EnhancedAbout = Transition(About)
+
+export default EnhancedAbout;
