@@ -3,13 +3,13 @@
     "site": "farmfortify",
     "public": "dist",
     "redirects" : [{
-      "source": "*/",
-      "destination" : "/",
+      "source": "/",
+      "destination" : "firebase.web.app/",
       "type" : "301"
     },
     {
-      "source": "*/About",
-      "destination" : "/about",
+      "source": "/about",
+      "destination" : "firebase.web.app/about",
       "type" : "301"
     }
   ],
