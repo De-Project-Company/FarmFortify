@@ -1,5 +1,5 @@
 import { MetricsData, ChoiceData } from "../../Data/aboutUsData";
-import Map from "../../assets/map.svg";
+import Map from "../../assets/Map.svg";
 import target from "../../assets/Targets.svg";
 import human from "../../assets/human.svg";
 
