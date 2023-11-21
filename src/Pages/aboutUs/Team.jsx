@@ -10,10 +10,11 @@ export const Team = () => {
           Meet our team of world-class problem solvers
         </p>
       </div>
-      <div className="flex flex-wrap mx-[auto] mt-[65px] justify-center gap-16 flex-start">
+
+      <div className="flex flex-wrap mx-auto m-[65px] px-[110px] justify-start gap-16 flex-start">
         {ProfileData.map((item, index) => {
           return (
-            <div key={index}>
+            <div key={index} className="justify-start">
               <img src={item.img} alt="profile" />
               <p>{item.name}</p>
               <p className="text-[#33383D] mt-[12px]">{item.Role}</p>

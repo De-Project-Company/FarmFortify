@@ -5,17 +5,17 @@ import human from "../../assets/human.svg";
 
 export const Metrics = () => {
   return (
-    <div className="px-[2rem] bg-white">
+    <div className="px-[6rem] bg-white">
       <div className="flex flex-col md:flex-row">
-        <div className="md:w-1/2 grid-cols-2 grid  items-center">
+        <div className="mt-4 md:w-1/2 grid-cols-2 h-[250px] md:my-auto grid items-center">
           {MetricsData.map((item, index) => (
             <div
               key={index}
               className={`flex mb-4 md:mb-0 items-center md:items-start `}
             >
-              <img src={item.img} alt="metrics" className=" w-10 h-10" />
+              <img src={item.img} alt="metrics" className="w-6 h-6 mr-[4px]" />
               <div className="">
-                <h1 className="">{item.number}</h1>
+                <h1 className="text-[#1A7408] ">{item.number}</h1>
                 <p className="text-[14px] md:mr-2 w-[160px]">{item.text}</p>
               </div>
             </div>
