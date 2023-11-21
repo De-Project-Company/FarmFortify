@@ -16,7 +16,9 @@ export const Metrics = () => {
               <img src={item.img} alt="metrics" className="w-6 h-6 mr-[4px]" />
               <div className="">
                 <h1 className="text-[#1A7408] ">{item.number}</h1>
-                <p className="text-[14px] md:mr-2 w-[160px]">{item.text}</p>
+                <p className="text-[14px] font-[Aeoniklight] md:mr-2 w-[160px]">
+                  {item.text}
+                </p>
               </div>
             </div>
           ))}
@@ -26,32 +28,36 @@ export const Metrics = () => {
         </div>
       </div>
       <div>
-        <h1>SDG targets</h1>
+        <h1 className="font-[AeonikMed] text-xl">SDG targets</h1>
         <img src={target} alt="target" className="mt-5 mb-[287px] " />
       </div>
       <div className="flex md:flex-col">
         <div className="mb-[172px] md:grid-cols-2 grid grid-cols-1 items-center">
           <img src={human} alt="human" className="h-auto w-[80%]" />
           <div>
-            <h1 className="mb-8 text-[#1A7408] text-2xl">Why choose us</h1>
-            <div className="grid-cols-2 grid  items-center">
+            <h1 className="mb-8 text-[#1A7408] font-[AeonikBold] text-2xl">
+              Why choose us
+            </h1>
+            <div className="grid-cols-2 grid">
               {ChoiceData.map((item, index) => (
                 <div
                   key={index}
                   className={`mb-8 mr-8 md:mb-0 items-center md:items-start `}
                 >
-                  <div className="flex">
+                  <div className="flex items-start">
                     <img
                       src={item.img}
                       alt="ticked"
-                      className=" w-4 h-4 mr-3"
+                      className=" w-6 h-6 mr-3"
                     />
-                    <h1 className="text-[#0F4605]">{item.title}</h1>
-                  </div>
-                  <div className="">
-                    <p className="text-[14px] mb-8 md:mr-2 w-[160px]">
-                      {item.text}
-                    </p>
+                    <div>
+                      <h1 className="text-[#0F4605] font-[AeonikBold]">
+                        {item.title}
+                      </h1>
+                      <p className="text-[14px] mt-4 mb-16 md:mr-2 font-[AeonikReg] w-[200px]">
+                        {item.text}
+                      </p>
+                    </div>
                   </div>
                 </div>
               ))}

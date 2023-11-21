@@ -2,13 +2,13 @@ import {Data} from "../../Data/aboutUsData";
 const StandFor = () => {
   return (
     <div className=" bg-[#DFFBD5] flex-shrink-0 pb-[130px] ">
-      <p className="text-gray-700 font-aeonik text-center pt-[106px] font-normal leading-normal tracking-wider">
+      <p className="text-gray-700 font-[AeonikLight] text-center pt-[106px] font-normal tracking-[4px]">
         Core value
       </p>
-      <h1 className="text-green-700 font-aeonik text-3xl text-center font-bold leading-normal">
+      <h1 className="text-[#1A7408] font-[AeonikBold] text-3xl text-center leading-[3rem]">
         What we stand for
       </h1>
-      <p className=" text-center mx-auto font-aeonik font-normal leading-normal md:w-[569px]">
+      <p className=" text-center mx-auto font-[Aeoniklight] font-normal leading-normal md:w-[569px]">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida nisl
         turpis rhoncus, non. Elementum sed molestie donec est sed. Sed sit
         aenean a, venenatis elit id vestibulum. Aliquet maecenas
@@ -25,10 +25,10 @@ const StandFor = () => {
                 alt=""
                 className="w-[94px] my-[27px] h-[94px] mx-auto flex-shrink-0"
               />
-              <h1 className="text-green-700 font-aeonik text-2xl text-center font-bold leading-normal">
+              <h1 className="text-[#121415] font-[AeonikBold] text-center font-bold leading-normal">
                 {data.title}
               </h1>
-              <p className="text-black text-center mx-auto font-aeonik font-normal leading-normal">
+              <p className="text-black text-center mx-auto font-[Aeoniklight] font-normal leading-normal">
                 {data.text}
               </p>
             </div>
