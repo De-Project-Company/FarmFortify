@@ -32,29 +32,29 @@ export const Metrics = () => {
         <img src={target} alt="target" className="mt-5 mb-[287px] " />
       </div>
       <div className="flex md:flex-col">
-        <div className="mb-[172px] md:grid-cols-2 grid grid-cols-1 items-center">
-          <img src={human} alt="human" className="h-auto w-[80%]" />
-          <div>
-            <h1 className="mb-8 text-[#1A7408] font-[AeonikBold] text-2xl">
+        <div className="mb-[172px]  md:grid md:grid-cols-2 grid grid-cols-1 items-center">
+          <img src={human} alt="human" className="h-auto w-full mx-auto md:w-[80%]" />
+          <div className=" md:text-left">
+            <h1 className="my-8 text-[#1A7408] font-[AeonikBold] text-2xl">
               Why choose us
             </h1>
-            <div className="grid-cols-2 grid">
+            <div className="lg:grid-cols-2 grid gap-4">
               {ChoiceData.map((item, index) => (
                 <div
                   key={index}
-                  className={`mb-8 mr-8 md:mb-0 items-center md:items-start `}
+                  className={`lg:mb-8 lg:mr-8  items-center md:items-start `}
                 >
                   <div className="flex items-start">
                     <img
                       src={item.img}
                       alt="ticked"
-                      className=" w-6 h-6 mr-3"
+                      className=" w-6 h-6 lg:mr-3"
                     />
                     <div>
                       <h1 className="text-[#0F4605] font-[AeonikBold]">
                         {item.title}
                       </h1>
-                      <p className="text-[14px] mt-4 mb-16 md:mr-2 font-[AeonikReg] w-[200px]">
+                      <p className="text-[14px] mt-4 lg:mb-16 md:mr-2 font-[AeonikReg] md:w-[200px]">
                         {item.text}
                       </p>
                     </div>

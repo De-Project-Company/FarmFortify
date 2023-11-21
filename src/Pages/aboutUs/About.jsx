@@ -7,16 +7,16 @@ import Team from "./Team";
 
 const About = () => {
   return (
-   <>
-     <Landing/>
-     <Mission/>
-     <StandFor/>
-    <Metrics/>
-    <Team/>
-   </>
+    <>
+      <Landing />
+      <Mission />
+      <StandFor />
+      <Metrics />
+      <Team />
+    </>
   );
 };
 
-const EnhancedAbout = Transition(About)
+const EnhancedAbout = Transition(About);
 
 export default EnhancedAbout;
