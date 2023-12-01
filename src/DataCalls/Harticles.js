@@ -1,6 +1,6 @@
 import loanGrants from '../assets/loansGrant.jpg'
 import hresource1 from '../assets/Hresource1.jpg'
-import hresource2 from '../assets/Hresource2.jpg'
+import hresource2 from '../assets/hresource2.jpg'
 import hresource3 from '../assets/Hresources3.jpg'
 export const  Harticles = [
     { img: loanGrants,
