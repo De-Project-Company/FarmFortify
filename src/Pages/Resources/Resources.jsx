@@ -3,6 +3,9 @@ import RLanding from './RLanding'
 import Reports from './Reports'
 import Articles from './Articles'
 import Transition from '../../Transition'
+import MarketTrends from './MarketTrends'
+import FAQ from './FAQ'
+import Newsletter from './Newsletter'
 
 const Resources = () => {
   return (
@@ -10,6 +13,9 @@ const Resources = () => {
       <RLanding/>
       <Reports/>
       <Articles/>
+      <MarketTrends/>
+      <FAQ/>
+      <Newsletter/>
     </div>
   )
 }

@@ -10,7 +10,8 @@ export default {
         lightGreen: '#E9F5E7',
         black: '#121415',
         grey: '#33383D',
-        deepGreen: '#1A7408'
+        deepGreen: '#1A7408',
+        comGreen: '#D3F5C6',
       }
     },
   },

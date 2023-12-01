@@ -137,6 +137,9 @@ swiper-container::part(button-prev), swiper-container::part(button-next){
 .charlie{
   scroll-behavior: smooth;
 }
+.mkt::-webkit-scrollbar{
+  width: 0 !important
+}
 
 @media(min-width: 1024px){
   .wecan{

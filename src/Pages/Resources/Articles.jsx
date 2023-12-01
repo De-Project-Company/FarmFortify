@@ -10,7 +10,7 @@ const Articles = () => {
       </header>
       <main className="flex flex-wrap md:grid md:grid-cols-2 gap-x-3 gap-y-8 lg:grid-cols-3 place-items-center ">
         {articles.map((x,index) =>(
-          <div key={index}>
+          <Link key={index}>
             <div className="w-full max-w-[380px]">
               <img src={x.img} alt={x.img} />
               <div className="px-6 py-5 bg-white flex flex-col gap-3 h-[180px]">
@@ -24,7 +24,7 @@ const Articles = () => {
                 <p className="text-black text-sm">by <span className="text-base font-[AeonikMed]">{x.editor}</span></p>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </main>
 
