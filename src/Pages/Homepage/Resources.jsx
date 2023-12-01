@@ -1,6 +1,6 @@
 import { GreenButton } from "../../Components/Buttton"
-import img1 from "../../assets/Resourcesimg1.svg"
-import img2 from "../../assets/Resourcesimg2.svg"
+import img1 from "../../assets/resourceimg1.jpg"
+import img2 from "../../assets/resourceimg1.jpg"
 
 const Resources = () => {
   return (

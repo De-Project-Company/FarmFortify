@@ -29,6 +29,7 @@
 }
 div a{
   font-family: AeonikLight;
+  font-size: 18px;
 }
 nav div a:hover{
   padding-bottom: 5px;
@@ -90,7 +91,7 @@ nav div a:hover{
 
 .wecan{
   height: 100%;
-  background: linear-gradient(180deg, #E49115 -27.02%, #e4911500 117.64%) 0 -50px  , url("./assets/wecan.png") 0 200px ;
+  background: linear-gradient(180deg, #E49115 -27.02%, #e4911500 117.64%) 0 -50px  , url("./assets/wecan.png") 0 400px ;
   background-repeat: no-repeat;
   
 }
@@ -119,11 +120,28 @@ nav div a:hover{
   background: rgba(17, 17, 17,0.65);
   transform-origin: top;
 }
+.class{
+  fill: aliceblue;
+  stroke: white;
+}
+swiper-container::part(container){
+  padding: 50px 0;
+}
+swiper-container::part(button-prev), swiper-container::part(button-next){
+  color: #1A7408;
+}
+.boxed{
+  box-shadow: 12px 12px 40px 0px rgba(28, 27, 27, 0.20);
+  border-radius: 2.637px;
+}
+.charlie{
+  scroll-behavior: smooth;
+}
 
 @media(min-width: 1024px){
   .wecan{
     height: 100%;
-    background: linear-gradient(180deg, #E49115 -27.02%, #e4911500 117.64%) 0 -350px  , url("./assets/wecan.png") 0 600px;
+    background: linear-gradient(180deg, #E49115 -27.02%, #e4911500 117.64%) 0 -350px  , url("./assets/wecan.png") 0 780px;
     background-repeat: no-repeat;
     
   }

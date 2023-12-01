@@ -1,60 +1,71 @@
-import { MetricsData, ChoiceData } from "../../Data/aboutUsData";
+import { ChoiceData,MetricsData1, MetricsData2 } from "../../Data/aboutUsData";
 import Map from "../../assets/Map.svg";
 import target from "../../assets/Targets.svg";
 import human from "../../assets/human.svg";
 
 export const Metrics = () => {
   return (
-    <div className="px-[6rem] bg-white">
-      <div className="flex flex-col md:flex-row">
-        <div className="mt-4 md:w-1/2 grid-cols-2 h-[250px] md:my-auto grid items-center">
-          {MetricsData.map((item, index) => (
-            <div
-              key={index}
-              className={`flex mb-4 md:mb-0 items-center md:items-start `}
-            >
-              <img src={item.img} alt="metrics" className="w-6 h-6 mr-[4px]" />
-              <div className="">
-                <h1 className="text-[#1A7408] ">{item.number}</h1>
-                <p className="text-[14px] font-[Aeoniklight] md:mr-2 w-[160px]">
-                  {item.text}
-                </p>
+    <div className="px-3 py-6 md:px-16 lg:px-[4vw] lg:py-28 bg-white">
+      <div className="flex items-center">
+        
+        <div className="w-full flex py-6 items-start gap-10 md:gap-40 md:max-w-[570px]">
+        <div className="flex flex-col gap-14">
+        {MetricsData1.map((x, index) => (
+            <div key={index} className="flex items-start">
+              <img src={x.img} alt="" className="w-10" />
+              <div>
+                <h5 className="text-2xl md:text-3xl text-[#1A7408] font-[AeonikBold]">{x.number}</h5>
+                <p className="text-lg font-[AeonikLight]">{x.text}</p>
               </div>
             </div>
+
           ))}
         </div>
-        <div className="md:w-1/2 mt-8 md:mt-0">
-          <img src={Map} alt="map" className="w-full h-auto p-8" />
+        <div className="flex flex-col gap-14">
+        {MetricsData2.map((x, index) => (
+            <div key={index} className="flex items-start">
+              <img src={x.img} alt="" className="w-10" />
+              <div>
+                <h5 className="text-2xl md:text-3xl text-[#1A7408] font-[AeonikBold]">{x.number}</h5>
+                <p className="text-lg font-[AeonikLight]">{x.text}</p>
+              </div>
+            </div>
+
+          ))}
+        </div>
+        </div>
+        <div className="hidden md:flex p-20">
+          <img src={Map} alt="map" className="w-full" />
         </div>
       </div>
       <div>
-        <h1 className="font-[AeonikMed] text-xl">SDG targets</h1>
-        <img src={target} alt="target" className="mt-5 mb-[287px] " />
+        <h1 className="font-[AeonikMed] text-3xl">SDG targets</h1>
+        <img src={target} alt="target" className="mt-5 " />
       </div>
-      <div className="flex md:flex-col">
-        <div className="mb-[172px]  md:grid md:grid-cols-2 grid grid-cols-1 items-center">
-          <img src={human} alt="human" className="h-auto w-full mx-auto md:w-[80%]" />
-          <div className=" md:text-left">
-            <h1 className="my-8 text-[#1A7408] font-[AeonikBold] text-2xl">
+      <div className="flex md:flex-col pt-7 lg:pt-72">
+        <div className="mb-[172px] md:flex flex-wrap  lg:grid lg:grid-cols-2 grid grid-cols-1 items-center">
+          <img src={human} alt="human" className="h-auto pb-7 md:pb-0 w-full md:w-[80%]" />
+          <div className=" flex flex-col gap-14">
+            <h1 className=" text-[#1A7408] font-[AeonikBold] text-4xl">
               Why choose us
             </h1>
-            <div className="lg:grid-cols-2 grid gap-4">
+            <div className="lg:grid-cols-2 lg:grid flex flex-col md:flex-row md:flex-wrap gap-6 ">
               {ChoiceData.map((item, index) => (
                 <div
                   key={index}
-                  className={`lg:mb-8 lg:mr-8  items-center md:items-start `}
+                  className={``}
                 >
-                  <div className="flex items-start">
+                  <div className="flex items-start gap-4">
                     <img
                       src={item.img}
                       alt="ticked"
-                      className=" w-6 h-6 lg:mr-3"
+                      className=" w-6"
                     />
                     <div>
-                      <h1 className="text-[#0F4605] font-[AeonikBold]">
+                      <h1 className="text-[#0F4605] text-[20px] font-[AeonikBold]">
                         {item.title}
                       </h1>
-                      <p className="text-[14px] mt-4 lg:mb-16 md:mr-2 font-[AeonikReg] md:w-[200px]">
+                      <p className="text-lg mt-4 lg:mb-16 md:mr-2 font-[AeonikReg] lg:w-[270px]">
                         {item.text}
                       </p>
                     </div>

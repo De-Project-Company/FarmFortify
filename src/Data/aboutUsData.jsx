@@ -21,18 +21,21 @@ export const Data = [
   },
 ];
 
-export const MetricsData = [
+export const MetricsData1= [
   { img: "./assests/currency.svg", number: "2,000+", text: "Loans Awarded" },
-  { img: "./assests/group.svg", number: "5,000+", text: "Farmers onboarded" },
   {
     img: "./assests/mountain.svg",
     number: "20,000+",
     text: "Hectares cultivated",
   },
-  { img: "./assests/work.svg", number: "35,000+", text: "Jobs created" },
   { img: "./assests/reached.svg", number: "700+", text: "Community reached" },
-  { img: "./assests/location.svg", number: "32", text: "States present" },
 ];
+
+export const MetricsData2 =  [
+  { img: "./assests/group.svg", number: "5,000+", text: "Farmers onboarded" },
+  { img: "./assests/work.svg", number: "35,000+", text: "Jobs created" },
+  { img: "./assests/location.svg", number: "32", text: "States present" },
+]
 
 export const ChoiceData = [
   {
@@ -94,4 +97,3 @@ export const ProfileData = [
     Role: "Front-end Developer",
   },
 ];
-export default { Data, MetricsData, ChoiceData, ProfileData };

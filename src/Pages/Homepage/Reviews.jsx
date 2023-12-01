@@ -1,17 +1,33 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState} from "react";
 import Button from "../../Components/Buttton";
 import PropTypes from "prop-types";
 import { Comments } from "../../DataCalls/Comments";
+import { register } from 'swiper/element/bundle';
+register();
 
 const Reviews = () => {
   let comment = Comments.map((farmers, index) => (
-    <Commendables
-      key={index}
-      name={farmers.name}
-      occupation={farmers.occupation}
-      image={farmers.image}
-      comment={farmers.comments}
-    />
+
+    <swiper-slide key={index}>
+      <div className=" flex flex-col justify-center items-center gap-14 md:px-32 lg:px-56">
+      <p className="text-center text-sm md:text-lg font-[AeonikMed]">{farmers.comments}</p>
+      <div className="flex items-center gap-5">
+        <img src={farmers.image} alt="farmers image" className="w-16" />
+        <div className="">
+          <h3 className="text-lg font-[AeonikBold]">{farmers.name}</h3>
+          <p>{farmers.occupation}</p>
+        </div> 
+      </div>
+      </div>
+    </swiper-slide>
+
+    // <Commendables
+    //   key={index}
+    //   name={farmers.name}
+    //   occupation={farmers.occupation}
+    //   image={farmers.image}
+    //   comment={farmers.comments}
+    // />
   ));
 
   let goToDate = new Date("12/18/2023").getTime()
@@ -81,15 +97,10 @@ const Reviews = () => {
         </div>
       </div>
       <div className="py-14 px-5">
-        <h1 className="text-center mb-12 text-2xl font-bold">Our Reviews</h1>
-        <div className="flex flex-wrap overflow-x-auto md:flex-nowrap gap-8 items-center">
+        <h1 className="text-center text-[32px] font-bold">Our Reviews</h1>
+        <swiper-container navigation="true" pagination="true" >
           {comment}
-        </div>
-        {/* <div className=" overflow-hidden relative h-[300px] w-[100%]">
-          <div className="flex items-center w-[200%] absolute overflow-hidden marquee2 h-auto gap-20">
-            {comment}
-          </div>
-        </div> */}
+        </swiper-container>
       </div>
     </div>
   );
