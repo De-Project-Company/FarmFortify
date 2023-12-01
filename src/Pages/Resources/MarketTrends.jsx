@@ -13,8 +13,8 @@ const MarketTrends = () => {
         mkt.scrollLeft +=50
       }
     }
-    setInterval( stocksInterval,5500)
-    return ()=> clearInterval(stocksInterval, 5500)
+    setInterval( stocksInterval,3500)
+    return ()=> clearInterval(stocksInterval, 3500)
   })
 
   return (

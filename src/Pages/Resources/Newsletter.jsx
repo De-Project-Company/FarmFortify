@@ -1,4 +1,3 @@
-import Button from '../../Components/Buttton'
 import newsletter from '../../assets/newsletter.jpg'
 const Newsletter = () => {
   return (

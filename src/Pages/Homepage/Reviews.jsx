@@ -1,6 +1,7 @@
 import { useEffect, useState} from "react";
 import Button from "../../Components/Buttton";
 import PropTypes from "prop-types";
+import column from '../../assets/Column 1.svg'
 import { Comments } from "../../DataCalls/Comments";
 import { register } from 'swiper/element/bundle';
 register();
@@ -74,22 +75,22 @@ const Reviews = () => {
           <Button>Book A Stand</Button>
         </div>
 
-        <div className="flex items-center timer py-4 ">
+        <div className="flex items-center timer py-4 lg:gap-3 ">
           <div className="flex flex-col items-center bg-[#1A7408] text-white w-20 md:w-28 py-3 rounded-md time">
             <h4 className="md:text-4xl font-bold">{countDown[0]}</h4>
             <p className="text-lg">Days</p>
           </div>
-          <p className="text-5xl text-[#1A7408]">:</p>
+          <img src={column} alt="" />
           <div className="flex flex-col items-center bg-[#1A7408] text-white w-20 md:w-28 py-3 rounded-md time">
             <h4 className=" font-bold md:text-4xl">{String(countDown[1]).padStart(2,"0")}</h4>
             <p className="text-lg">Hours</p>
           </div>
-          <p className="text-[#1A7408] text-5xl">:</p>
+          <img src={column} alt="" />
           <div className="flex flex-col items-center bg-[#1A7408] text-white px-6 py-3 rounded-md time w-20 md:w-28">
             <h4 className="md:text-4xl font-bold">{String(countDown[2]).padStart(2,"0")}</h4>
             <p className="text-lg">Minutes</p>
           </div>
-          <p className="text-[#1A7408] text-5xl">:</p>
+          <img src={column} alt="" />
           <div className="flex flex-col items-center bg-[#1A7408] text-white py-3 w-20 md:w-28 rounded-md time">
             <h4 className="md:text-4xl font-bold">{String(countDown[3]).padStart(2,"0")}</h4>
             <p className="text-lg">Seconds</p>
