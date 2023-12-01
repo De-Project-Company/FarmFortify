@@ -1,4 +1,5 @@
 import { help } from "../../DataCalls/help"
+import PropTypes from 'prop-types'
 const Wecan = () => {
   const cardlist = help.map(x => <HelpCard key={x.cardTitle} cardDesc={x.cardDesc} cardImage={x.cardImage} cardTitle={x.cardTitle}/>)
   return (
@@ -19,18 +20,25 @@ export default Wecan
 
 const HelpCard = ({cardImage, cardTitle, cardDesc})=>{
   return(<div className="">
-  <div className="px-12 md:px-14 py-16 bg-white w-[550px] h-[290px] weCanCards z-30">
+  <div className="px-7 md:px-14 py-8 md:py-16 bg-white w-[400px] md:w-[550px] h-[250px]  md:h-[290px] weCanCards z-30">
     <header className="flex items-center mb-4 gap-3">
       <img src={cardImage} alt={cardTitle}  className="w-9"/>
-      <h4 className="text-[#E49115] text-2xl">
+      <h4 className="text-[#E49115] text-xl md:text-2xl">
         {cardTitle}
       </h4>
     </header>
     <main className="pt-3">
-    <p className="text-lg font-[AeonikReg]">
+    <p className="text-base md:text-lg font-[AeonikReg]">
       {cardDesc}
     </p>
     </main>
   </div>
   </div>)
+}
+
+HelpCard.propTypes = {
+  cardImage: PropTypes.string,
+  cardTitle: PropTypes.string,
+  cardDesc: PropTypes.string
+
 }

@@ -5,23 +5,11 @@ import EnhancedAbout  from "./Pages/aboutUs/About";
 import { AnimatePresence } from "framer-motion";
 import EnhancedHomepage from "./Pages/Homepage/Homepage";
 import EnhancedResources from "./Pages/Resources/Resources";
-import { useEffect, useState } from "react";
+import EnhancedLoan from "./Pages/Loan/Loan";
 
 
 function App() {
   const location = useLocation();
-
-  const [loading,setLoading] = useState(false)
-
-  useEffect(()=>{
-
-    window.addEventListener('load', ()=>{
-      setLoading(true)
-    })
-    window.addEventListener('unload', ()=>{
-      setLoading(false)
-    })
-  })
 
   return (
     <>
@@ -32,6 +20,7 @@ function App() {
           <Route index element={<EnhancedHomepage />} />
           <Route path="/about" element={<EnhancedAbout />} />
           <Route path="/resources" element={<EnhancedResources />} />
+          <Route path="/loan" element={<EnhancedLoan />} />
         </Routes>
       </AnimatePresence>
       <Footer />

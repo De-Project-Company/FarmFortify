@@ -7,12 +7,13 @@ import sterling from "../../assets/SterlingLogo.svg";
 import boa from "../../assets/boaImage.svg";
 import carrotImg from "../../assets/someCarrots.png";
 import Button from "../../Components/Buttton";
+import { HashLink } from 'react-router-hash-link';
 
 const Partner = () => {
   return (
     <div className="px-3 py-6 md:px-16 lg:px-[4vw] md:py-6 lg:py-28">
       <div>
-        <h1 className="text-xl font-semibold">Our Partners</h1>
+        <h1 className="text-xl font-semibold" >Our Partners</h1>
         <div className="overflow-hidden relative h-28 w-[100%]">
           <div className="flex items-center w-[200%] absolute overflow-hidden marquee h-32">
             <span>
@@ -70,7 +71,7 @@ const Partner = () => {
             We are here to help foster your growth in agro-business and improve
             the livelihood of farmers in Nigeria
           </p>
-          <Button>Learn More &gt; </Button>
+          <HashLink smooth  to='/loan#loantype'><Button>Learn More &gt; </Button></HashLink>
         </div>
       </div>
       <div></div>
