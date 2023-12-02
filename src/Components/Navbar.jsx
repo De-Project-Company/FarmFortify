@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 import { NavLink } from "react-router-dom";
-import ham from "../assets/ham.svg";
 import closeIcon from "../assets/closeMenu.svg";
 import Button from "./Buttton";
 import { useEffect, useState } from "react";
@@ -120,7 +119,7 @@ const Navbar = () => {
           </div>
           <div>
             <NavLink
-              to="/loans"
+              to="/loan"
               style={({ isActive }) => {
                 return {
                   paddingBottom: isActive ? "5px" : " ",

@@ -28,9 +28,6 @@ const StandFor = () => {
               <h1 className="text-[#121415] font-[AeonikBold] text-lg text-center font-bold leading-normal">
                 {data.title}
               </h1>
-              <p className="text-black text-center mx-auto font-[Aeoniklight] text-lg font-normal leading-normal">
-                {data.text}
-              </p>
             </div>
           );
         })}

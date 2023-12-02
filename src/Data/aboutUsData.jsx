@@ -2,22 +2,18 @@ export const Data = [
   {
     img: "./assests/community.svg",
     title: "Community",
-    text: "Lorem ipsum doloenas",
   },
   {
     img: "./assests/empowerment.svg",
     title: "Empowerment",
-    text: "Lorem ipsum doloenas",
   },
   {
     img: "./assests/innovation.svg",
     title: "Innovation",
-    text: "Lorem ipsum doloenas",
   },
   {
     img: "./assests/transparency.svg",
     title: "Transparency",
-    text: "Lorem ipsum doloenas",
   },
 ];
 
