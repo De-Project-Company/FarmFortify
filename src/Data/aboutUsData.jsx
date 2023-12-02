@@ -80,7 +80,7 @@ export const ProfileData = [
   {
     img: "./assests/Jacob.svg",
     name: "Jacob Adeleke",
-    Role: "Product Manager",
+    Role: "Product Designer",
   },
   {
     img: "./assests/Adegbuyi.svg",

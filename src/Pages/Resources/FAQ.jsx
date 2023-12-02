@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types'
-import arrowDown from '../../assets/arrowDown.jpg'
 import { useState } from 'react'
 const FAQ = () => {
   return (
@@ -9,12 +8,13 @@ const FAQ = () => {
       </header>
       <div className='flex flex-col items-center gap-4 px-3'>
 
-      <Accordion question="What is FarmFortify about?"/>
-      <Accordion question="Who are FarmFortify’s stakeholders?"/>
-      <Accordion question="Does FarmFortify give out loans to smallholder farmers?"/>
-      <Accordion question="How does FarmFortify aim to solve agricultural problems"/>
-      <Accordion question="Who are your partners?"/>
-      <Accordion question="Are Fish farmers eligible for the loans?"/>
+      <Accordion question="What is FarmFortify about?" answer="FarmFortify is an Agric platform for encouraging and incentivizing both experienced farmers and non-farmers to explore and venture into large-scale agriculture in Nigeria. "/>
+      <Accordion question="Who are FarmFortify&apos;s stakeholders?" answer="Our Stakeholders are: Farmers, Non Farmers, Aspiring Farmers, Financial Institutions, Agricultural Enthusiasts, Agribusiness Organization"/>
+      <Accordion question="Does FarmFortify give out loans to smallholder farmers?" answer="Smallholder or large-scale farmer, all farmers have equal access to our loan scheme. However, we do not give out loans. What we do is facilitate loans to save our users the stress of going through the rigor of obtaining loan at the bank"/>
+      <Accordion question="How does FarmFortify aim to solve agricultural problems" answer="While we acknowledge the so many challenges facing agriculture in Nigeria, some of the ways through which we aim to solve agricultural problems in Nigeria are;Knowledge Hub, Sharing latest market insights, Loan facilitation, Farmer-first policy, Active community"/>
+      <Accordion question="Who are your partners?" answer="At FarmFortify, we are currently exploring strategic partnerships with key institutions in the financial and agric space. As we continue to grow and expand, we are in talks with potential partners who share our vision for sustainable agriculture and support for farmers. Please stay tuned for exciting updates as we work towards collaborating with key organizations to enhance the agricultural landscape together"/>
+      <Accordion question="Are Fish farmers eligible for the loans?" answer="Yes, all farmers are eligible for our loan scheme.
+"/>
 
       </div>
     </div>
@@ -26,8 +26,12 @@ export default FAQ
 export const Accordion = ({question, answer})=>{
   const [revealAns, setRevealAns] = useState(false)
 
+  function handleReveal(){
+    setRevealAns(!revealAns)
+  }
+
   return(<div className='w-full max-w-[750px] bg-comGreen'>
-  <button className='flex items-center justify-between w-full px-[10px] py-5 rounded-md md:text-xl text-base text-black border-[0.5px] border-grey'>
+  <button className='flex items-center justify-between w-full px-[10px] py-5 rounded-md md:text-xl text-base text-black border-[0.5px] border-grey' onClick={handleReveal}>
     {question}
     <span>
     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
@@ -35,7 +39,7 @@ export const Accordion = ({question, answer})=>{
 </svg>
     </span>
   </button>
-  {revealAns ? (<div>{answer}</div>): null}
+  {revealAns ? (<div className='text-lg font-[AeonikLight] px-3'>{answer}</div>): null}
   </div>)
 }
 

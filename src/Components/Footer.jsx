@@ -14,10 +14,8 @@ const Footer = () => {
           <h3 className="text-[#1A7408] text-3xl font-[AeonikBold]">
             FarmFortify
           </h3>
-          <p className="text-sm font-[AeonikLight]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vel
-            nemo odit laborum velit reiciendis, dolores at dicta culpa eaque
-            unde nihil ab{" "}
+          <p className="text-sm lg:w-3/4 font-[AeonikLight]">
+          Helping farmers transition into large-scale farming while fostering their growth in agri-business.{" "}
           </p>
           <div className="flex items-center gap-3">
             <Link>

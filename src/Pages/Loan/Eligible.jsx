@@ -8,7 +8,7 @@ const Eligible = () => {
             <h3 className='text-3xl font-[AeonikMed]'>
                 What Kind Of Loan Am I Eligible For?
             </h3>
-            <p className=' text-lg font-[AeonikLight] w-[40%] leading-normal my-7'>
+            <p className=' text-lg font-[AeonikLight] md:w-[40%] leading-normal my-7'>
             Not sure what kind of loan or resource fits your business needs presently? Book a free consultation from us.
             </p>
             <Button>Free Consultation</Button>
