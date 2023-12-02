@@ -2,7 +2,7 @@ import Button from "../../Components/Buttton";
 export const Team = () => {
   return (
     <div className="w-[100%]">
-      <div className="h-auto lg:h-[668px] mt-[100px] bg-[#d3f5c638] mb-[10px] md:mb-[100px] flex flex-col lg:flex-row px-10 py-[30px] md:px-[auto] md:pt-[127px]">
+      <div className="h-auto lg:h-[668px] mt-[100px] bg-[#d3f5c638] mb-[10px] md:mb-[100px] flex flex-col lg:flex-row px-10 py-[30px] md:pl-[120px] md:pt-[127px]">
         <div className=" lg:w-1/3 flex flex-col">
           <h1 className="font-[AeonikLight] items-center flex text-[16px] text-[#33383D] lg:text-[24px] mb-4">
             Latest
@@ -26,7 +26,7 @@ export const Team = () => {
             </Button>
           </div>
         </div>
-        <div className="mt-3 w-[100%] flex flex-wrap  lg:flex-nowrap gap-[24px]">
+        <div className="mt-3 md:mt-0 w-[100%] flex flex-wrap  lg:flex-nowrap gap-[24px]">
           <div className="mb-[100x]">
             <div>
               <img src="/assests/tutorial1.png" alt="1st tutorial" />

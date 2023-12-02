@@ -3,7 +3,7 @@ import { NewsData } from "../../Data/CommunityData";
 export const News = () => {
   return (
     <div className=" w-[100%]">
-      <div className="h-auto lg:h-[668px] mt-[100px] bg-[#d3f5c638] mb-[10px] md:mb-[100px] flex flex-col lg:flex-row px-10 py-[30px] md:px-[auto] md:pt-[127px]">
+      <div className="h-auto lg:h-[668px] mt-[100px] bg-[#d3f5c638] mb-[10px] md:mb-[100px] flex flex-col lg:flex-row px-10 py-[30px] md:px-[120px] md:pt-[127px]">
         <div className="lg:w-1/3 flex flex-col">
           <h1 className="font-[AeonikLight] items-center flex text-[16px] text-[#121415] lg:text-[24px] mb-4">
             Latest <span className="font-[AeonikBold]  ml-2">news</span>
@@ -31,7 +31,7 @@ export const News = () => {
             <div key={index} className=" "> 
               <div className="">
                 <div className="mx-auto justify-start place-items-center flex-start h-max border border-[#1A7408] w-[276px] ">
-                  <img src={item.src} alt={item.tag} />
+                  <img  className="border border-b-[#1A7408] w-max" src={item.src} alt={item.tag} />
                   <div className="bg-[#D3F5C6] p-[26px] w-[276px]">
                     <h2 className= "border px-[8px] py-[1px] w-max font-[AeonikLight] text-[#1a7408e4] border-[#1A7408] ">{item.tag}</h2>
                     <h1 className="text-[18px] font-[AeonikMed] my-[20px] text-[#33383D]">{item.title}</h1>
