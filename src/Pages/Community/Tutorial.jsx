@@ -2,7 +2,7 @@ import Button from "../../Components/Buttton";
 import Ecosystem from "../../assets/communityEcosystem.png";
 const Tutorial = () => {
   return (
-    <div className="md:mb-[200px] mb-[50px] h-[auto] md:h-[668px] w-[100%]">
+    <div className="md:mb-[100px] mb-[20px] h-[auto] md:h-[668px] w-[100%]">
       <div
         className="flex flex-col bg-no-repeat bg-cover w-full h-[100%] md:flex-row px-10 py-[30px] md:px-[120px] md:pt-[127px]"
         style={{ backgroundImage: `url(${Ecosystem})`, objectFit: "cover" }}

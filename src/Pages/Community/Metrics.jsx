@@ -2,7 +2,7 @@ import Button from "../../Components/Buttton";
 import Ambassador from "../../assets/CommunityAmbassador.png";
 export const Metrics = () => {
   return (
-    <div className="bg-[#d3f5c638] mt-[100px] flex flex-col md:flex-row px-10 py-[40px] md:px-[120px] md:py-[86px]">
+    <div className="bg-[#d3f5c638] mb-[20px] md:mb-[100px] flex flex-col md:flex-row px-10 py-[40px] md:px-[120px] md:py-[86px]">
       <div className="lg:w-1/3 flex flex-col">
         <h1 className="font-[AeonikMed] items-center flex text-[16px] text-[#121415] lg:text-[24px] mb-4">
          Ambassador<span  className="text-[#33383D] ml-2 font-[AeonikLight]">  Program</span>

@@ -2,7 +2,7 @@ import Button from "../../Components/Buttton";
 export const Team = () => {
   return (
     <div className="w-[100%]">
-      <div className="h-auto lg:h-[668px] mt-[100px] bg-[#d3f5c638] mb-[10px] md:mb-[100px] flex flex-col lg:flex-row px-10 py-[30px] md:pl-[120px] md:pt-[127px]">
+      <div className="h-auto lg:h-[668px] mb-[20px] bg-[#d3f5c638] md:mb-[100px] md:mb-[100px] flex flex-col lg:flex-row px-10 py-[30px] md:pl-[120px] md:pt-[127px]">
         <div className=" lg:w-1/3 flex flex-col">
           <h1 className="font-[AeonikLight] items-center flex text-[16px] text-[#33383D] lg:text-[24px] mb-4">
             Latest
@@ -26,8 +26,8 @@ export const Team = () => {
             </Button>
           </div>
         </div>
-        <div className="mt-3 md:mt-0 w-[100%] flex flex-wrap  lg:flex-nowrap gap-[24px]">
-          <div className="mb-[100x]">
+        <div className="mt-3 w-[100%] flex flex-wrap  lg:flex-nowrap gap-[24px]">
+          <div className="border border-[#1A7408] h-max">
             <div>
               <img src="/assests/tutorial1.png" alt="1st tutorial" />
             </div>
@@ -41,31 +41,31 @@ export const Team = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div className="border border-[#1A7408] h-max">
             <div>
               <img src="/assests/tutorial1.png" alt="1st tutorial" />
             </div>
             <div className="bg-[#D3F5C6] w-[276px] border-t-[#1A7408] pb-[40px] p-[16px] border">
               <p className="text-[#121415] text-[18px] ">
-                What’s coming up?...
+                Transaction Privacy v ...
               </p>
               <div className="flex gap-x-5">
                 <img src="/assests/icon.svg" alt="calender img" />
-                <p className="text-[#33383D] text-[13px]">Jan 14, 2024</p>
+                <p className="text-[#33383D] text-[13px]">Dec 10, 2023</p>
               </div>
             </div>
           </div>
-          <div>
+          <div className="border border-[#1A7408] h-max">
             <div>
               <img src="/assests/tutorial1.png" alt="1st tutorial" />
             </div>
             <div className="bg-[#D3F5C6] w-[276px] border-t-[#1A7408] pb-[40px] p-[16px] border">
               <p className="text-[#121415] text-[18px] ">
-                What’s coming up?...
+                Conventional Farming{" "}
               </p>
               <div className="flex gap-x-5">
                 <img src="/assests/icon.svg" alt="calender img" />
-                <p className="text-[#33383D] text-[13px]">Jan 14, 2024</p>
+                <p className="text-[#33383D] text-[13px]">Sept 8, 2024</p>
               </div>
             </div>
           </div>

@@ -1,7 +1,7 @@
 import platform from "../../assets/communityPlatform.png";
 const Platforms = () => {
   return (
-    <div className="bg-[#D3F5C6] mb-[100px] flex flex-col md:flex-row px-10 py-[30px] md:px-[120px] md:pt-[127px]">
+    <div className="bg-[#d3f5c638]  mb-[20px] md:mb-[100px] flex flex-col md:flex-row px-10 py-[30px] md:px-[120px] md:pt-[127px]">
       <div className="lg:w-1/3 flex flex-col">
         <h1 className=" items-center flex text-[16px]  text-[#33383D] font-[AeonikBold] lg:text-[24px] mb-4">
           Community <span className="font-[AeonikLight] ml-2 ">Platforms</span> 

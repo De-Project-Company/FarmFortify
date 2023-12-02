@@ -3,7 +3,7 @@ import { NewsData } from "../../Data/CommunityData";
 export const News = () => {
   return (
     <div className=" w-[100%]">
-      <div className="h-auto lg:h-[668px] mt-[100px] bg-[#d3f5c638] mb-[10px] md:mb-[100px] flex flex-col lg:flex-row px-10 py-[30px] md:px-[120px] md:pt-[127px]">
+      <div className="h-auto lg:h-[668px] md:mb-[100px] bg-[#d3f5c638] mb-[20px] flex flex-col lg:flex-row px-10 py-[30px] md:pl-[120px] md:pt-[127px]">
         <div className="lg:w-1/3 flex flex-col">
           <h1 className="font-[AeonikLight] items-center flex text-[16px] text-[#121415] lg:text-[24px] mb-4">
             Latest <span className="font-[AeonikBold]  ml-2">news</span>
