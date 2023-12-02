@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import closeIcon from "../assets/closeMenu.svg";
 import Button from "./Buttton";
 import { useEffect, useState } from "react";
@@ -205,6 +205,11 @@ const Contact = ({ handleModalAppearance }) => {
               onClick={handleModalAppearance}
             />
           </div>
+        </div>
+        <div className="py-5">
+        Please follow our <Link to="https://twitter.com/farmfortify" className="italic text-lg">X-(twitter)</Link>. Kindly send us a direct message and we’d be glad to respond accordingly.
+
+
         </div>
       </div>
     </>
