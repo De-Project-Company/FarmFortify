@@ -5,6 +5,7 @@ import EnhancedAbout  from "./Pages/aboutUs/About";
 import { AnimatePresence } from "framer-motion";
 import EnhancedHomepage from "./Pages/Homepage/Homepage";
 import EnhancedResources from "./Pages/Resources/Resources";
+import EnhancedCommunity from "./Pages/Community/Community";
 import { useEffect, useState } from "react";
 
 
@@ -32,6 +33,8 @@ function App() {
           <Route index element={<EnhancedHomepage />} />
           <Route path="/about" element={<EnhancedAbout />} />
           <Route path="/resources" element={<EnhancedResources />} />
+          <Route path="/community" element={<EnhancedCommunity />} />
+
         </Routes>
       </AnimatePresence>
       <Footer />
