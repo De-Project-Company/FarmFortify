@@ -1,5 +1,6 @@
 import landingBg from '../../assets/HomeLangding.jpg'
 import Button from '../../Components/Buttton'
+import {HashLink} from 'react-router-hash-link'
 
 const Landing = () => {
   return (
@@ -13,7 +14,7 @@ const Landing = () => {
       </p>
 
       <div>
-        <Button>Apply for a Loan</Button>
+      <HashLink smooth to="/loan#loancal"><Button>Apply for a Loan</Button></HashLink>
       </div>
       </div>
     </div>

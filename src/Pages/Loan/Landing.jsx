@@ -1,5 +1,6 @@
 import loanLanding from '../../assets/loanLanding.jpg'
 import Button from '../../Components/Buttton'
+import {HashLink} from 'react-router-hash-link'
 const Landing = () => {
   return (
     <div className="w-full min-h-[calc(100vh-5rem)] bg-no-repeat bg-cover text-white px-7 py-5 md:px-16 lg:px-[4vw] md:py-6 lg:py-[125px] mt-14 hero landhero relative " style={{ backgroundImage: "url(" + loanLanding + ")"}}>
@@ -12,7 +13,7 @@ const Landing = () => {
       </p>
 
       <div>
-        <Button>Apply for a Loan</Button>
+       <HashLink smooth to="#loancal"><Button>Apply for a Loan</Button></HashLink> 
       </div>
       </div>
     </div>
