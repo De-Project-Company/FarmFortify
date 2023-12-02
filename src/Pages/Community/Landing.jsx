@@ -3,7 +3,7 @@ import Button from "../../Components/Buttton";
 const Landing = () => {
   return (
     <div
-      className="flex flex-col md:mb-[100px] lg:justify-center z-0 w-full min-h-[calc(100vh-8rem)] bg-no-repeat lg:bg-cover text-white"
+      className="flex flex-col md:mb-[100px] lg:justify-center z-0 w-full min-h-[calc(100vh-9rem)] bg-no-repeat lg:bg-cover text-white"
       style={{ backgroundImage: `url(${CommunityHero})` }}
     >
       <div className=" px-10 pt-[65px] md:px-[120px] md:pt-[127px]">
