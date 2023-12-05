@@ -13,7 +13,7 @@ const Resources = () => {
           <img src={img1} alt="" className=" w-full max-w-[387px] h-[406px]" />
         </div>
         <div className="w-full max-w-[406px] h-[406px] bg-white lg:mr-3 py-16 px-9">
-          <h2 className="text-2xl md:text-[32px] leading-10 font-[AeonikMed]">
+          <h2 className="text-xl md:text-2xl md:text-[32px] leading-10 font-[AeonikMed]">
             ICAACS Nigeria 2023 New Update
           </h2>
           <button className="bg-deepGreen text-white p-[6px] mt-5 rounded mb-2">
@@ -30,10 +30,10 @@ const Resources = () => {
         </div>
         {Harticles.map((x, index) => (
           <Link key={index} className="h-[398px]">
-            <div className="w-full  max-w-[387px] mr-3">
+            <div className="w-full max-w-[387px] mr-3">
               <img src={x.img} alt={x.img} />
-              <div className="px-6 py-5 bg-white flex flex-col gap-3 h-[180px]">
-                <h3 className="text-lg md:text-xl text-black font-[AeonikMed] leading-7">
+              <div className="px-6 py-3 md:py-5 bg-white flex flex-col gap-3 h-[180px]">
+                <h3 className="text-base md:text-xl text-black font-[AeonikMed] leading-7">
                   {x.headingText}
                 </h3>
                 <div className="flex items-center gap-4 text-sm ">

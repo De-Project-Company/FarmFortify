@@ -1,7 +1,6 @@
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import { useState } from "react";
 import * as Yup from "yup";
-import {HashLink} from 'react-router-hash-link'
 
 const LoanCal = () => {
   const [resultState, setResultState] = useState(false)
@@ -38,13 +37,18 @@ const LoanCal = () => {
           loanType: Yup.string().required("*Choose Your Preferred Loan Type"),
         })}
         onSubmit={(value) => {
-          let tInterest = 0.05 * value.amount
+          let tInterest = Math.floor((0.055 / 12) * (value.amount * value.repaymentTerms))
           let mInstall = Math.floor((value.amount/ value.repaymentTerms) + tInterest)
           let tRepay = tInterest + value.amount
-          setRvalues({...rvalues, tInterest : tInterest, mInstall: mInstall, tRepay: tRepay })
+          setRvalues(
+            {
+            ...rvalues, 
+            tInterest : tInterest, 
+            mInstall: mInstall, 
+            tRepay: tRepay
+            }
+            )
           setResultState(true)
-
-          console.log("Yay!");
         }}
       >
         {({isValid }) => (
@@ -80,7 +84,7 @@ const LoanCal = () => {
                   type="number"
                   name="annualInterest"
                   className="bg-lightGreen2 border text-xl text-[#707070] border-[#707070] rounded-md px-5 py-4 w-full md:w-[420px]"
-                  placeholder="5%"
+                  placeholder="5.5%"
                   readOnly
                 />
               </div>
