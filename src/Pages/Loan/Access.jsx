@@ -2,14 +2,14 @@ import { Accessed } from "../../DataCalls/AccessData";
 const Access = () => {
   return (
     <div className="px-7 py-5 md:px-16 lg:px-[4vw] md:py-6 lg:py-[108px]">
-      <div className="text-center text-black flex flex-col items-center justify-center md:py-6 lg:py-[108px]  ">
+      <div className="text-center text-black flex flex-col items-center justify-center md:py-6 lg:py-[108px]">
         <h2 className="text-4xl  md:text-[44px]  font-[AeonikBold] pb-4">
           Access Financial Aid to Scale.
         </h2>
         <p className="text-3xl md:text-[36px] font-[AeonikMed] pb-5 ">
           Increase production on a larger scale.
         </p>
-        <p className="text-base md:text-lg font-[AeonikLight] md:w-[63%] ">
+        <p className="text-base md:text-lg font-[AeonikLight] pb-5 md:w-[63%] ">
           We understand that agriculture requires financial support to thrive.
           Our loan feature is carefully designed to provide farmers with the
           financial assistance they need to enhance their operational

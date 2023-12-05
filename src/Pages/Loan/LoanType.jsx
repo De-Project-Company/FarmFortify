@@ -16,7 +16,7 @@ const LoanType = () => {
                 <img src={x.Img} alt={x.headText} />
                 <div>
                     <h3 className="text-orange text-xl md:text-[28px] pt-[10px] pb-[25px] font-[AeonikBold]">{x.headText}</h3>
-                    <p className="text-base text-lg font-[AeonikLight]">{x.bodyText}</p>
+                    <p className="text-base md:text-lg font-[AeonikLight]">{x.bodyText}</p>
                 </div>
               </div>
             </div>
