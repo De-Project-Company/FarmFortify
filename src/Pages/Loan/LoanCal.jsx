@@ -37,8 +37,8 @@ const LoanCal = () => {
           loanType: Yup.string().required("*Choose Your Preferred Loan Type"),
         })}
         onSubmit={(value) => {
-          let tInterest = Math.floor((0.055 / 12) * (value.amount * value.repaymentTerms))
-          let mInstall = Math.floor((value.amount/ value.repaymentTerms) + tInterest)
+          let tInterest = (0.055 / 12) * (value.amount * value.repaymentTerms)
+          let mInstall = Math.floor((value.amount/ value.repaymentTerms) + tInterest/value.repaymentTerms)
           let tRepay = tInterest + value.amount
           setRvalues(
             {
