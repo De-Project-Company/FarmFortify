@@ -43,21 +43,20 @@ const Navbar = () => {
   }
 
   useEffect(() => {
+    var navBar = document.getElementById("trans")
+    var sticky = navBar.offsetTop
     const getScroll = () => {
-      setBodyScrollValue(document.body.scrollTop);
-      setElementScrollValue(document.documentElement.scrollTop);
-      if (bodyScrollValue > 20 || elementscrollValue > 20) {
-        document.getElementById("trans").style.top = "0";
-      } else if (elementscrollValue < 5 || bodyScrollValue < 5 || elementscrollValue === 0) {
-        document.getElementById("trans").style.top = null
+      if (window.scrollY >= sticky) {
+        navBar.classList.add("sticky")
+      } else {
+        navBar.classList.remove("sticky");
       }
-
     };
 
     window.addEventListener("scroll", getScroll);
 
     return () => window.removeEventListener("scroll", getScroll);
-  }, [bodyScrollValue, elementscrollValue]);
+  });
 
   return (
     <div className="relative">

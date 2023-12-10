@@ -60,8 +60,10 @@ nav div a:hover{
    }
 }
 
-.trans{
-  transition: top 0.3s;
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .timer p{
