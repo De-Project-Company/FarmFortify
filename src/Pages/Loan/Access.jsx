@@ -18,11 +18,11 @@ const Access = () => {
         </p>
       </div>
       <div className="flex items-center justify-center">
-        <div className="bg-comGreen py-20 px-[102px]">
+        <div className="bg-comGreen py-20 md:px-[102px]">
             <header>
                 <h3 className="text-deepGreen text-3xl font-[AeonikBold] pb-10 md:text-4xl text-center">Benefits</h3>
             </header>
-            <div className="flex flex-wrap md:flex-nowrap gap-5 items-center">
+            <div className="flex flex-wrap md:flex-nowrap gap-5 justify-center items-center">
                 {Accessed.map((x,index)=>(
                     <div key={index}>
                         <div className="w-[200px] bg-white flex flex-col items-center justify-center px-8 py-9 h-[169px] gap-3 boxed">
